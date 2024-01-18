@@ -6,5 +6,3 @@ Customizable Password Length: Users can adjust the length of the password using 
 Character Type Selection: Options to include lowercase letters, uppercase letters, numbers, symbols, and spaces in the password.
 Exclude Duplicate Characters: An option to ensure that each character in the password is unique.
 Password Strength Indicator: A visual indicator that shows the strength of the generated password based on its length.
-Copy to Clipboard: Easy copying of the generated password to the clipboard with a single click.
-Responsive Design: The application is fully responsive and works well on both desktop and mobile devices.
