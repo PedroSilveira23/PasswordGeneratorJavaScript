@@ -1,4 +1,5 @@
 Password Generator JavaScript
+
 This repository contains the code for a simple yet effective password generator web application. Developed with HTML, CSS, and JavaScript, this tool provides an interactive and user-friendly interface to create secure passwords.
 
 Features
