@@ -2,7 +2,7 @@ Password Generator JavaScript
 
 This repository contains the code for a simple yet effective password generator web application. Developed with HTML, CSS, and JavaScript, this tool provides an interactive and user-friendly interface to create secure passwords.
 
-Features
+Features:
 
 Customizable Password Length: Users can adjust the length of the password using a slider, allowing for passwords between 1 to 30 characters.
 
