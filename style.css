@@ -1,4 +1,7 @@
+/* Importing Google's Poppins font in different weights */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* Base styles for all elements to reset default margins, paddings, and set a common font */
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +9,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Styling for the body to center its contents and apply a gradient background */
 body {
   display: flex;
   align-items: center;
@@ -14,6 +18,7 @@ body {
   background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
+/* Styles for the main container, including background, border, and shadow */
 .container {
   width: 450px;
   background: #fff;
@@ -22,6 +27,7 @@ body {
   border: 1px solid #e0e0e0;
 }
 
+/* Styling for the header within the container */
 .container h2 {
   font-weight: 600;
   font-size: 1.31rem;
@@ -31,14 +37,17 @@ body {
   border-bottom: 1px solid #e0e0e0;
 }
 
+/* Wrapper for internal content, with margin applied */
 .wrapper {
   margin: 1.25rem 1.75rem;
 }
 
+/* Styles for input box wrapper */
 .wrapper .input-box {
   position: relative;
 }
 
+/* Styling for input fields */
 .input-box input {
   width: 100%;
   height: 53px;
@@ -52,6 +61,7 @@ body {
   padding: 0 2.85rem 0 1rem;
 }
 
+/* Styling for span elements inside input box, often used for icons */
 .input-box span {
   position: absolute;
   right: 13px;
@@ -60,10 +70,12 @@ body {
   color: #a0a0a0;
 }
 
+/* Hover effect for span elements in the input box */
 .input-box span:hover {
   color: #6c5ce7;
 }
 
+/* Basic styles for password strength indicator */
 .wrapper .pass-indicator {
   width: 100%;
   height: 4px;
@@ -73,40 +85,46 @@ body {
   border-radius: 25px;
 }
 
+/* Dynamic width and color changes for password strength indicator */
 .pass-indicator::before {
   position: absolute;
   content: "";
   height: 100%;
-  width: 50%;
+  width: 50%; /* Default width, changes based on password strength */
   border-radius: inherit;
   transition: width 0.3s ease;
 }
 
+/* Colors for different password strengths */
 .pass-indicator#weak::before {
   width: 20%;
   background: #e64a4a;
 }
-
+/* Styling for medium strength indicator in password strength meter */
 .pass-indicator#medium::before {
   width: 50%;
   background: #f1c80b;
 }
 
+/* Styling for strong strength indicator in password strength meter */
 .pass-indicator#strong::before {
   width: 100%;
   background: #4285f4;
 }
 
+/* Margin settings for the password length section */
 .wrapper .pass-length {
   margin: 1.56rem 0 1.25rem;
 }
 
+/* Styling for the details in password length section, including color and flex layout */
 .pass-length .details {
   color: #a0a0a0;
   display: flex;
   justify-content: space-between;
 }
 
+/* Styling for the password length input slider */
 .pass-length input {
   width: 100%;
   height: 5px;
@@ -114,6 +132,7 @@ body {
   border-color: #d0d0d0;
 }
 
+/* Flexbox layout for password settings options */
 .pass-settings .options {
   display: flex;
   list-style: none;
@@ -121,6 +140,7 @@ body {
   margin-top: 1rem;
 }
 
+/* Styling for each option in password settings, including alignment and margin */
 .pass-settings .options .option {
   display: flex;
   align-items: center;
@@ -128,6 +148,7 @@ body {
   width: calc(100% / 2);
 }
 
+/* Styling for the input checkboxes in options */
 .options .option input {
   background: #f0f0f0;
   border-color: #d0d0d0;
@@ -136,12 +157,14 @@ body {
   cursor: pointer;
 }
 
+/* Styling for the labels in options, including cursor and padding */
 .options .option label {
   cursor: pointer;
   color: #a0a0a0;
   padding-left: 0.63rem;
 }
 
+/* Styling for the password generate button */
 .wrapper .generate-btn {
   width: 100%;
   color: #fff;
@@ -158,14 +181,15 @@ body {
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
+/* Hover effect for the generate button, changing background color and shadow */
 .wrapper .generate-btn:hover {
   background-color: #3fb8af;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
-/* Additional Styles for Futuristic Feel */
-.input-box input {
-  background: #4fd1c5;
-  color: #fff;
-  border: 1px solid #444b52;
-}
 
+/* Additional futuristic styles for the input boxes */
+.input-box input {
+  background: #4fd1c5; /* Futuristic teal background */
+  color: #fff; /* White text color */
+  border: 1px solid #444b52; /* Dark border for contrast */
+}
